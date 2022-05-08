@@ -1,4 +1,16 @@
 
-
+@endpoint = https://udq317fn57.execute-api.us-east-1.amazonaws.com/prod/
 GET https://udq317fn57.execute-api.us-east-1.amazonaws.com/prod/hello
+###
+
+POST {{endpoint}}/spaces/
+Content-Type: application/json
+
+{
+    "location":"London",
+    "name": "My Second Home"
+}
+###
+
+GET {{endpoint}}/spaces?spaceId=816c84fe-14cc-4e93-8811-b946d703496f
 ###
